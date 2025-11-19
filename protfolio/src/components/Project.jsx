@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { ProjectsData } from "../assets/assets";
 
 const Project = () => {
+  const [activeIndex, setActiveIndex] = useState(null); // for mobile tap effect
+
   return (
     <div id="project" className="py-20 -mt-20">
       <div className="max-w-7xl mx-auto px-6 py-6">
@@ -20,22 +22,24 @@ const Project = () => {
                 key={index}
                 className="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition duration-300 flex flex-col"
               >
-                {/* IMAGE WITH OVERLAY */}
-                <div className="relative w-full h-64 group overflow-hidden">
+                {/* IMAGE */}
+                <div
+                  className="relative w-full h-64 group overflow-hidden cursor-pointer"
+                  onClick={() =>
+                    setActiveIndex(activeIndex === index ? null : index)
+                  }
+                >
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                    className={`w-full h-full object-cover transition-transform duration-500 
+                      ${
+                        activeIndex === index
+                          ? "scale-110"
+                          : "group-hover:scale-110"
+                      }
+                    `}
                   />
-
-                  {/* Initial dark overlay */}
-                  <div
-                    className="
-                    absolute inset-0 bg-black/40
-                    group-hover:bg-black/0
-                    transition duration-500
-                  "
-                  ></div>
                 </div>
 
                 {/* CARD CONTENT */}
@@ -44,7 +48,7 @@ const Project = () => {
                     {project.title}
                   </h3>
 
-                  {/*  Description Scroll Container */}
+                  {/* Description Scroll Container */}
                   <div className="max-h-28 overflow-y-auto mb-3 pr-1 text-sm text-gray-600 custom-scroll">
                     {project.description}
                   </div>
@@ -83,7 +87,6 @@ const Project = () => {
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </div>
