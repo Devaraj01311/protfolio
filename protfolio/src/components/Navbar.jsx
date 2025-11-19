@@ -8,7 +8,6 @@ const Navbar = () => {
         <div className='max-w-7xl mx-auto px-6'>
             <div className='flex justify-between items-center'>
                 <div className='text-2xl font-bold text-zinc-800'>
-                    <span>The-</span>
                     <span className='text-teal-800 font-orbitron'>Devaraj L</span>
                 </div>
                 {/*menu */}
