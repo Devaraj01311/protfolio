@@ -59,7 +59,7 @@ export const ProjectsData = [
     image: "/nammaride.jpeg",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT", "Google Maps API", "GSAP"],
     githubLink: "https://github.com/Devaraj01311/NammaRide__",
-    liveLink: "https://nammaride-1-tatc.onrender.com"
+    liveLink: "https://nammaride-1-2ii1.onrender.com/"
   },
   {
     title: "Foodie",
@@ -75,7 +75,7 @@ export const ProjectsData = [
     image: "/job.jpeg",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "OpenAI API"],
     githubLink: "https://github.com/Devaraj01311/JobPortalAI",
-    liveLink: "https://jobportalai-1.onrender.com"
+    liveLink: "https://jobportalai-1-gkf6.onrender.com"
   },
   {
     title: "AICodeReview",
