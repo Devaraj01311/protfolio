@@ -17,14 +17,16 @@ const Hero = () => {
                             I craft immersive web experience at the intersection of design and technology.
                         </p>
                         <div className="flex flex-col md:flex-row items-center gap-4">
-                            <button className="flex gap-2 items-center px-10 py-4 bg-black rounded-full text-slate-200 hover:text-white cursor-pointer">
+                            <a
+                                href="#Project"
+                             className="flex gap-2 items-center px-10 py-4 bg-black rounded-full text-slate-200 hover:text-white cursor-pointer">
                                 View My Projects
                                 <FaArrowRight/>
-                            </button>
-                        <button className="flex gap-2 items-center px-10 py-4 border border-slate-400  rounded-full  hover:border-slate-800 transition duration-300 cursor-pointer">
+                            </a>
+                        <a href="#Contact" className="flex gap-2 items-center px-10 py-4 border border-slate-400  rounded-full  hover:border-slate-800 transition duration-300 cursor-pointer">
                                contact Me
                                 <FaArrowRight/>
-                            </button>
+                            </a>
                             </div> 
                     </div>
                     {/* image */}
@@ -35,9 +37,9 @@ const Hero = () => {
                     
                             </div>
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl border border-slate-600/20 overflow-hidden p-3 ">
-                        <div className=" w-full h-full flex irems-center justify-center">
+                        <div className=" w-full h-full flex items-center justify-center">
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-white">1+</div>
+                                <div className="text-3xl font-bold text-white">+</div>
                                 <div className="text-sm text-white">years Experience</div>
                             </div>
                         </div>

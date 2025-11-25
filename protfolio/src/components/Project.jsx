@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ProjectsData } from "../assets/assets";
 
 const Project = () => {
-  const [activeIndex, setActiveIndex] = useState(null); // for mobile tap effect
+  const [activeIndex, setActiveIndex] = useState(null); 
 
   return (
     <div id="project" className="py-20 -mt-20">

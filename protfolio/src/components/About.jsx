@@ -76,6 +76,16 @@ const About = () => {
               <FaArrowRight className="text-gray-500 text-sm" />
               Download Resume
             </a>
+            <div className="flex items-center justify-centerv p-6">
+              <a 
+              href="/certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+                className="flex gap-2 items-center px-10 py-4 border border-slate-400  rounded-full  hover:border-slate-800 transition duration-300 cursor-pointer">
+                <FaArrowRight className="text-gray-500 text-sm" />
+                My Certificates
+              </a>
+            </div>
           </div>
 
         </div>
