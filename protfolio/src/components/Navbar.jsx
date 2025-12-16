@@ -21,7 +21,7 @@ const Navbar = () => {
                 {/* buttons */}
                 <div>
                    <a
-  href="/Devaraj resume 4.pdf"
+  href="/Devaraj resume 5.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="px-10 py-4 border border-zinc-800 rounded-full flex items-center gap-2 
