@@ -69,7 +69,7 @@ const About = () => {
           {/* ---------- GRID ITEM: RESUME BUTTON ---------- */}
           <div className="flex items-center justify-center p-6">
             <a
-              href="/Devaraj .pdf"
+              href="/Devaraj resume 4.pdf"
               target="_blank"
               rel="noopener noreferrer"
                className="flex gap-2 items-center px-10 py-4 bg-black rounded-full text-slate-200 hover:text-white cursor-pointer">
