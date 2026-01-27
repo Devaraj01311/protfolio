@@ -84,7 +84,16 @@ export const ProjectsData = [
     tech: ["React.js", "Node.js", "Express.js", "OpenAI API"],
     githubLink: "https://github.com/Devaraj01311/AI-reviewer",
     liveLink: "https://ai-code-reviewer-front.onrender.com"
-  }
+  },
+  {
+  title: "CareerGuideX",
+  description: "A career guidance platform that helps users explore career paths, find job opportunities, and get personalized recommendations. Features include job listings, AI-based career insights, resume and interview tips, and a clean user-friendly interface.",
+  image: "/CareerGuideX.png",
+  tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "OpenAI API"],
+  githubLink: "https://github.com/Devaraj01311/CareerGuideX",
+  liveLink: "https://careerguidex.onrender.com"
+}
+
 ]
 
 export const profileData = 
@@ -112,7 +121,7 @@ export const profileData =
   {
     icon: FaTools,
     title: "Developer Tools & Version Control",
-    technologies: ["Git", "GitHub", "Visual Studio Code", "Postman"]
+    technologies: ["Git", "GitHub", "Visual Studio Code", "Postman", "Docker", "Jenkins", "Kubernetes"]
   },
   {
     icon: FaPlus,

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ProjectsData } from "../assets/assets";
 
 const Project = () => {
-  const [activeIndex, setActiveIndex] = useState(null); 
+  const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <div id="project" className="py-20 -mt-20">
@@ -15,16 +15,16 @@ const Project = () => {
             Cutting-edge web applications built with modern technologies.
           </p>
 
-          {/* GRID */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
+          {/* FLEX CONTAINER FOR AUTO-CENTERING */}
+          <div className="flex flex-wrap justify-center gap-8 mt-10">
             {ProjectsData.map((project, index) => (
               <div
                 key={index}
-                className="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition duration-300 flex flex-col"
+                className="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition duration-300 flex flex-col w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] max-w-[400px]"
               >
-                {/* IMAGE */}
+                {/* IMAGE - Decreased height from h-64 to h-48 */}
                 <div
-                  className="relative w-full h-64 group overflow-hidden cursor-pointer"
+                  className="relative w-full h-48 group overflow-hidden cursor-pointer"
                   onClick={() =>
                     setActiveIndex(activeIndex === index ? null : index)
                   }
@@ -42,23 +42,23 @@ const Project = () => {
                   />
                 </div>
 
-                {/* CARD CONTENT */}
-                <div className="p-5 flex flex-col grow">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                {/* CARD CONTENT - Compact padding */}
+                <div className="p-4 flex flex-col grow">
+                  <h3 className="text-lg font-bold text-gray-800 mb-2">
                     {project.title}
                   </h3>
 
-                  {/* Description Scroll Container */}
-                  <div className="max-h-28 overflow-y-auto mb-3 pr-1 text-sm text-gray-600 custom-scroll">
+                  {/* Description Scroll Container - Decreased max-height */}
+                  <div className="max-h-20 overflow-y-auto mb-3 pr-1 text-sm text-gray-600 custom-scroll">
                     {project.description}
                   </div>
 
                   {/* TECH BADGES */}
-                  <div className="flex flex-wrap gap-2 mb-5">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((language, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-gray-100 text-xs font-semibold rounded-full"
+                        className="px-2 py-0.5 bg-gray-100 text-[10px] font-semibold rounded-full"
                       >
                         {language}
                       </span>
@@ -70,7 +70,7 @@ const Project = () => {
                     <a
                       href={project.liveLink}
                       target="_blank"
-                      className="flex-1 bg-teal-600 text-white py-2 rounded-lg text-center font-semibold hover:bg-teal-700"
+                      className="flex-1 bg-teal-600 text-white py-1.5 rounded-lg text-center text-sm font-semibold hover:bg-teal-700"
                     >
                       Live Demo
                     </a>
@@ -78,7 +78,7 @@ const Project = () => {
                     <a
                       href={project.githubLink}
                       target="_blank"
-                      className="flex-1 border border-gray-400 py-2 rounded-lg text-center font-semibold hover:bg-gray-100"
+                      className="flex-1 border border-gray-400 py-1.5 rounded-lg text-center text-sm font-semibold hover:bg-gray-100"
                     >
                       GitHub
                     </a>
